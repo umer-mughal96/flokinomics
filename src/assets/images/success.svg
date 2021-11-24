@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="129" viewBox="0 0 160 129">
+  <g id="Group_305" data-name="Group 305" transform="translate(-10488.659 -1165.273)">
+    <g id="Group_303" data-name="Group 303" transform="translate(10489 1165)">
+      <circle id="Ellipse_23" data-name="Ellipse 23" cx="40.5" cy="40.5" r="40.5" transform="translate(32.659 29.273)" fill="#00f75e"/>
+      <circle id="Ellipse_31" data-name="Ellipse 31" cx="9.5" cy="9.5" r="9.5" transform="translate(113.659 3.273)" fill="#00f75e"/>
+      <circle id="Ellipse_35" data-name="Ellipse 35" cx="5" cy="5" r="5" transform="translate(117.659 91.273)" fill="#00f75e"/>
+      <ellipse id="Ellipse_37" data-name="Ellipse 37" cx="4.5" cy="5" rx="4.5" ry="5" transform="translate(73.659 9.273)" fill="#fff"/>
+      <ellipse id="Ellipse_39" data-name="Ellipse 39" cx="5" cy="5.5" rx="5" ry="5.5" transform="translate(24.659 105.273)" fill="#fff"/>
+      <circle id="Ellipse_33" data-name="Ellipse 33" cx="12" cy="12" r="12" transform="translate(-0.341 63.273)" fill="#00f75e" opacity="0.572"/>
+      <circle id="Ellipse_32" data-name="Ellipse 32" cx="3" cy="3" r="3" transform="translate(36.659 0.273)" fill="#fff" opacity="0.524"/>
+      <ellipse id="Ellipse_183" data-name="Ellipse 183" cx="6.5" cy="6" rx="6.5" ry="6" transform="translate(91.659 117.273)" fill="#fff" opacity="0.524"/>
+      <circle id="Ellipse_34" data-name="Ellipse 34" cx="3" cy="3" r="3" transform="translate(153.659 74.273)" fill="#fff" opacity="0.524"/>
+      <circle id="Ellipse_36" data-name="Ellipse 36" cx="3" cy="3" r="3" transform="translate(23.659 35.273)" fill="#fff" opacity="0.524"/>
+    </g>
+    <g id="Group_304" data-name="Group 304" transform="translate(10547.336 1223.336)">
+      <line id="Line_57" data-name="Line 57" x2="10.46" y2="10.46" transform="translate(0 11.265)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="7"/>
+      <line id="Line_58" data-name="Line 58" y1="21.725" x2="21.725" transform="translate(10.46 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="7"/>
+    </g>
+  </g>
+</svg>
