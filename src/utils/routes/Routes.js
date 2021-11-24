@@ -15,6 +15,7 @@ const MainRoutes = () => {
     return (
         <Router>
             <Routes>
+                {/* <Route path='/' element={<Home />}></Route> */}
                 <Route path='/' element={(<PrivateRoute ><Home /></PrivateRoute>)} />
                 <Route path='/signin' element={(<PublicRoute ><SignIn /></PublicRoute>)} />
                 <Route path='/signup' element={(<PublicRoute ><SignUp /></PublicRoute>)} />

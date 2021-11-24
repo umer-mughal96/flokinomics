@@ -1,12 +1,12 @@
-import { Flex, HStack, Stack, VStack } from '@chakra-ui/layout'
+import { Stack, Text } from '@chakra-ui/layout'
 import React from 'react'
 
 
 const Home = () => {
     return (
-        <Stack >
+        <Text >
             Home
-        </Stack>
+        </Text>
     )
 }
 

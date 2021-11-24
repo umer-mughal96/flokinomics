@@ -1,15 +1,19 @@
 import React from 'react';
 import {
-  ChakraProvider,
+  ChakraProvider, Text,
 } from '@chakra-ui/react';
 import MainRoutes from './utils/routes/Routes';
 import theme from './assets/theme/Theme';
+import Home from './screens/home/Home';
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <MainRoutes />
-    </ChakraProvider>
+    <>
+      <ChakraProvider theme={theme}>
+        <MainRoutes />
+      </ChakraProvider>
+    </>
+
   );
 }
 
