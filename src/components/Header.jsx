@@ -1,7 +1,3 @@
-
-
-
-
 import React from 'react'
 import { Stack, HStack, VStack, Input, Button, Avatar, Text } from "@chakra-ui/react"
 import { Box, Container, Link } from '@chakra-ui/layout'
@@ -14,7 +10,7 @@ import { PhoneIcon, SearchIcon, ChevronDownIcon } from '@chakra-ui/icons'
 const Header = () => {
     return (
 
-        <Container maxW="full" bg='rgb(28,28,28)' py='4'>
+        <Container maxW="full" bg='#1c1c1c' py='4'>
             <HStack px='46' m='auto' spacing="24px">
                 <Box w="15%" h="40px" >
                     <Text color='#fff'>Flokinomics</Text>
