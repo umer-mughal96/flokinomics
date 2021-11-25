@@ -9,6 +9,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer';
 import Create from '../../screens/home/Create';
 import BuyFlokin from '../../screens/home/Buy Flokin/BuyFlokin';
+import MarketPlace from '../../screens/marketPlace/MarketPlace';
 
 
 
@@ -18,6 +19,7 @@ const MainRoutes = () => {
             <Header />
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/marketplace' element={<MarketPlace />} />
                 <Route path='/create' element={<Create />} />
                 <Route path='/buyflokin' element={<BuyFlokin />} />
             </Routes>

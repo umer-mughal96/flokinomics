@@ -30,7 +30,7 @@ const Header = () => {
                     </InputGroup>
                     <UnorderedList style={{ listStyleType: 'none', display: 'flex' }}>
                         <ListItem px='4' color='#8b8b8b' cursor='pointer' onClick={()=>navigate('/')}>Home</ListItem>
-                        <ListItem px='4' color='#8b8b8b' cursor='pointer' ><>Market</></ListItem>
+                        <ListItem px='4' color='#8b8b8b' cursor='pointer' onClick={()=>navigate('/marketplace')}><>Market</></ListItem>
                         <ListItem px='4' color='#8b8b8b' cursor='pointer' onClick={()=>navigate('/create')}>Create</ListItem>
                         <ListItem px='4' color='#8b8b8b' cursor='pointer' onClick={()=>navigate('/buyflokin')}>Buy Flokin</ListItem>
                         <ListItem px='4' color='#8b8b8b' cursor='pointer'>About</ListItem>

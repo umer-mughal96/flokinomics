@@ -4,9 +4,9 @@ import React from 'react'
 import bgimg from '../../assets/images/sitebg.jpg'
 import HeroSection from '../../components/home/HeroSection'
 import Pics from '../../components/home/Pics'
-import GettingStarted from '../../components/GettingStarted'
-import Stats from '../../components/Stats'
+import Stats from '../../components/home/Stats'
 import FeaturedCollections from '../../components/home/FeaturedCollections'
+import GettingStarted from '../../components/home/GettingStarted'
 
 const Home = () => {
     return (
