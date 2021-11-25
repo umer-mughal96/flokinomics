@@ -1,6 +1,11 @@
 import React from 'react'
 import { Stack, Box, Text, UnorderedList, ListItem, Container, Link, Divider, Flex, Spacer, HStack } from '@chakra-ui/layout'
 import { AddIcon, SunIcon } from '@chakra-ui/icons'
+import { Menu, MenuButton } from '@chakra-ui/menu'
+import { Button } from '@chakra-ui/button'
+import { MenuList, MenuItem } from '@chakra-ui/menu'
+import { EmailIcon } from '@chakra-ui/icons'
+
 const Footer = () => {
     return (
         <Container maxW="full" bg='#0f0f0f'>
@@ -10,10 +15,37 @@ const Footer = () => {
                         Flokinomics Marketplace is a next generation marketplace where artists
                         and collectors can create,sell and collect digital items secured with blockchain.
                     </Text>
+                    <Menu>
+                        <MenuButton mt='20px' leftIcon={<EmailIcon />} as={Button} bgColor='#272727' borderRadius='3xl' >
+                            English
+                        </MenuButton>
+                        <MenuList>
+                            <MenuItem minH="48px">
+                                {/* <Image
+                                    boxSize="2rem"
+                                    borderRadius="full"
+                                    src="https://placekitten.com/100/100"
+                                    alt="Fluffybuns the destroyer"
+                                    mr="12px"
+                                /> */}
+                                <span>Fluffybuns the Destroyer</span>
+                            </MenuItem>
+                            <MenuItem minH="40px">
+                                {/* <Image
+                                    boxSize="2rem"
+                                    borderRadius="full"
+                                    src="https://placekitten.com/120/120"
+                                    alt="Simon the pensive"
+                                    mr="12px"
+                                /> */}
+                                <span>Simon the pensive</span>
+                            </MenuItem>
+                        </MenuList>
+                    </Menu>
                 </Box>
                 <Box w="30%" h="">
-                    <Text color='white' >Marketplace</Text>
-                    <UnorderedList style={{ listStyleType: 'none', marginLeft: '0px' }}>
+                    <Text color='white' pb='20px' >Marketplace</Text>
+                    <UnorderedList style={{ listStyleType: 'none', marginLeft: '0px', }} spacing='16px'>
                         <ListItem ><Link>Explore</Link></ListItem>
                         <ListItem ><Link>Creators</Link></ListItem>
                         <ListItem ><Link>Website General Terms of Use</Link></ListItem>
@@ -21,8 +53,8 @@ const Footer = () => {
                     </UnorderedList>
                 </Box>
                 <Box w="30%" h="">
-                    <Text color='white'>Resources</Text>
-                    <UnorderedList style={{ listStyleType: 'none', marginLeft: '0px' }}>
+                    <Text color='white' pb='20px'>Resources</Text>
+                    <UnorderedList spacing='16px' style={{ listStyleType: 'none', marginLeft: '0px' }}>
                         <ListItem ><Link>White Paper</Link></ListItem>
                         <ListItem ><Link>Telegram Community</Link></ListItem>
                     </UnorderedList>
@@ -52,8 +84,6 @@ const Footer = () => {
                     </Box>
                 </Flex>
             </Stack>
-
-
         </Container>
     )
 }
