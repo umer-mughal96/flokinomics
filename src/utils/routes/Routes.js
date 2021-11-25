@@ -9,6 +9,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer';
 import Create from '../../screens/home/Create';
 import BuyFlokin from '../../screens/home/Buy Flokin/BuyFlokin';
+import About from '../../screens/About/About';
 
 
 
@@ -20,6 +21,7 @@ const MainRoutes = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='/create' element={<Create />} />
                 <Route path='/buyflokin' element={<BuyFlokin />} />
+                <Route path='/about' element={<About />} />
             </Routes>
             <Footer/>
             

@@ -16,9 +16,9 @@ const Create = () => {
             <Stack direction={["column", "row"]} spacing="24px" py='100px' maxW='1100px' m='auto'>
                 <Box w='30%' textAlign='center' borderRadius='8px' >
                     <Box p='2' bg='#1d1d1d' color='white' marginBottom='16px' borderRadius='6px'>
-                        <Box border='1px dashed #ccc' borderRadius='8px' py='7'>
+                        <Box  onClick={() => document.getElementById('file').click()} border='1px dashed #ccc' borderRadius='8px' py='7'>
                             <AddIcon fontSize='34px' my='4' />
-                            <Input border='none' type='file' variant="outline" placeholder="Outline" hidden />
+                            <Input d='none' id='file' border='none' type='file' variant="outline" placeholder="Outline" hidden />
                             <Text maxW='200px' m='auto'>Choose File or Drag and Drop</Text>
                         </Box>
                     </Box>
