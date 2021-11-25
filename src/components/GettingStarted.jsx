@@ -6,7 +6,7 @@ import { InfoIcon } from '@chakra-ui/icons'
 const GettingStarted = () => {
     return (
         <Container maxW="1200px">
-            <Box py='90px'>
+            <Box py='90px' color='white'>
                 <Heading as="h2" size="xl" textAlign='center' pb='40px'>How to Get Started</Heading>
                 <Flex color='white'>
                     <Box bg="#1d1d1d" borderRadius='14' p='16px' w="24%" >

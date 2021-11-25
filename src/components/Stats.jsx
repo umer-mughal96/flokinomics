@@ -6,7 +6,7 @@ const Stats = () => {
         <>
           <Container maxW="1200px">
             <Box py='90px' textAlign='center'>
-                <Heading as="h2" size="xl" textAlign='center' pb='40px'>Stats</Heading>
+                <Heading as="h2" size="xl" textAlign='center' pb='40px' color='white'>Stats</Heading>
                 <Flex bg='#1d1d1d' color='white'>
                     <Box bg="#1d1d1d" borderRadius='14' p='16px' w="24%" >
                         <Heading d='flex' color='#eac642' alignItems='center' as='h3' size='md' justifyContent='center' pb='20px'>126k</Heading>
