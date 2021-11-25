@@ -6,6 +6,7 @@ import HeroSection from '../../components/home/HeroSection'
 import Pics from '../../components/home/Pics'
 import GettingStarted from '../../components/GettingStarted'
 import Stats from '../../components/Stats'
+import FeaturedCollections from '../../components/home/FeaturedCollections'
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <HeroSection />
             <Pics />
             <Stats />
+            <FeaturedCollections />
             <GettingStarted />
         </VStack>
     )
