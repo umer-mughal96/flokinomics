@@ -3,19 +3,19 @@
 
 
 import React from 'react'
-import { Stack, HStack, VStack, Input, Button, Avatar, Text } from "@chakra-ui/react"
+import {  HStack,  Input, Button, Avatar, Text } from "@chakra-ui/react"
 import { Box, Container, Link } from '@chakra-ui/layout'
 import { UnorderedList, ListItem } from '@chakra-ui/layout'
 import { InputGroup, InputRightElement } from '@chakra-ui/input'
 import { MenuList, MenuItem, MenuButton, Menu } from '@chakra-ui/menu'
-import { PhoneIcon, SearchIcon, ChevronDownIcon } from '@chakra-ui/icons'
+import { SearchIcon, ChevronDownIcon } from '@chakra-ui/icons'
 
 
 const Header = () => {
     return (
 
         <Container maxW="full" bg='rgb(28,28,28)' py='4'>
-            <HStack px='46' m='auto' spacing="24px">
+            <HStack px='46' m='auto' spacing="24px" maxW='1400px'>
                 <Box w="15%" h="40px" >
                     <Text color='#fff'>Flokinomics</Text>
                 </Box>
@@ -26,14 +26,14 @@ const Header = () => {
                             pointerEvents="none"
                             children={<SearchIcon color="gray.300" />}
                         />
-                        <Input type="text" placeholder="" size='md' border='none' />
+                        <Input type="text" placeholder="Flokinomics" size='md' border='none' />
                     </InputGroup>
                     <UnorderedList style={{ listStyleType: 'none', display: 'flex' }}>
-                        <ListItem px='4' color='#7F7F7F'><Link>Home</Link></ListItem>
-                        <ListItem px='4' color='#7F7F7F'><Link>Market</Link></ListItem>
-                        <ListItem px='4' color='#7F7F7F'><Link>Create</Link></ListItem>
-                        <ListItem px='4' color='#7F7F7F'><Link>Buy Flokin</Link></ListItem>
-                        <ListItem px='4' color='#7F7F7F'><Link>About</Link></ListItem>
+                        <ListItem px='4' color='#8b8b8b'><Link>Home</Link></ListItem>
+                        <ListItem px='4' color='#8b8b8b'><Link>Market</Link></ListItem>
+                        <ListItem px='4' color='#8b8b8b'><Link>Create</Link></ListItem>
+                        <ListItem px='4' color='#8b8b8b'><Link>Buy Flokin</Link></ListItem>
+                        <ListItem px='4' color='#8b8b8b'><Link>About</Link></ListItem>
                     </UnorderedList>
                     <Menu>
                         <MenuButton as={Avatar} rightIcon={<ChevronDownIcon />}>
@@ -47,7 +47,7 @@ const Header = () => {
                             <MenuItem>Attend a Workshop</MenuItem>
                         </MenuList>
                     </Menu>
-                    <Button border fontWeight='200' bg='transparent' color='#00CEFF' border='1px solid #00CEFF' borderRadius='20px' mx='4'>Connect Wallet</Button>
+                    <Button border fontWeight='200' bg='transparent' color='#00CEFF' border='1px solid #00CEFF' borderRadius='20px' mx='4' fontSize='12px'>Connect Wallet</Button>
                 </Box>
             </HStack>
         </Container>
