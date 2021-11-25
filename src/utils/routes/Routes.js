@@ -7,6 +7,8 @@ import {
 import Home from '../../screens/home/Home'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer';
+import Create from '../../screens/home/Create';
+import BuyFlokin from '../../screens/home/Buy Flokin/BuyFlokin';
 
 
 
@@ -16,7 +18,8 @@ const MainRoutes = () => {
             <Header />
             <Routes>
                 <Route path='/' element={<Home />} />
-              
+                <Route path='/create' element={<Create />} />
+                <Route path='/buyflokin' element={<BuyFlokin />} />
             </Routes>
             <Footer/>
             
