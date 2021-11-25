@@ -4,6 +4,8 @@ import React from 'react'
 import bgimg from '../../assets/images/sitebg.jpg'
 import HeroSection from '../../components/home/HeroSection'
 import Pics from '../../components/home/Pics'
+import GettingStarted from '../../components/GettingStarted'
+import Stats from '../../components/Stats'
 
 const Home = () => {
     return (
@@ -18,6 +20,8 @@ const Home = () => {
         >
             <HeroSection />
             <Pics />
+            <Stats />
+            <GettingStarted />
         </VStack>
     )
 }

@@ -6,6 +6,7 @@ import {
 
 import Home from '../../screens/home/Home'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer';
 
 
 
@@ -17,6 +18,7 @@ const MainRoutes = () => {
                 <Route path='/' element={<Home />} />
               
             </Routes>
+            <Footer/>
             
         </Router>
     )
