@@ -10,6 +10,7 @@ import Footer from '../../components/Footer';
 import Create from '../../screens/home/Create';
 import BuyFlokin from '../../screens/home/Buy Flokin/BuyFlokin';
 import MarketPlace from '../../screens/marketPlace/MarketPlace';
+import About from '../../screens/About/About';
 
 
 
@@ -22,6 +23,7 @@ const MainRoutes = () => {
                 <Route path='/marketplace' element={<MarketPlace />} />
                 <Route path='/create' element={<Create />} />
                 <Route path='/buyflokin' element={<BuyFlokin />} />
+                <Route path='/about' element={<About />} />
             </Routes>
             <Footer/>
             

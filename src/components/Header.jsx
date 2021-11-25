@@ -33,7 +33,7 @@ const Header = () => {
                         <ListItem px='4' color='#8b8b8b' cursor='pointer' onClick={()=>navigate('/marketplace')}><>Market</></ListItem>
                         <ListItem px='4' color='#8b8b8b' cursor='pointer' onClick={()=>navigate('/create')}>Create</ListItem>
                         <ListItem px='4' color='#8b8b8b' cursor='pointer' onClick={()=>navigate('/buyflokin')}>Buy Flokin</ListItem>
-                        <ListItem px='4' color='#8b8b8b' cursor='pointer'>About</ListItem>
+                        <ListItem px='4' color='#8b8b8b' cursor='pointer' onClick={()=>navigate('/about')}>About</ListItem>
                     </UnorderedList>
                     <Menu>
                         <MenuButton size='sm' as={Avatar} rightIcon={<ChevronDownIcon />}>
