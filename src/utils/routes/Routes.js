@@ -3,23 +3,21 @@ import {
     BrowserRouter as Router,
     Routes, Route
 } from "react-router-dom";
-import PublicRoute from './PublicRoute';
-import PrivateRoute from './PrivateRoute'
-import Home from '../../screens/home/Home.jsx'
-import SignUp from '../../screens/signup/SignUp';
-import SignIn from '../../screens/signin/SignIn.jsx'
+
+import Home from '../../screens/home/Home'
+import Header from '../../components/Header'
 
 
 
 const MainRoutes = () => {
     return (
         <Router>
+            <Header />
             <Routes>
-                {/* <Route path='/' element={<Home />}></Route> */}
-                <Route path='/' element={(<PrivateRoute ><Home /></PrivateRoute>)} />
-                <Route path='/signin' element={(<PublicRoute ><SignIn /></PublicRoute>)} />
-                <Route path='/signup' element={(<PublicRoute ><SignUp /></PublicRoute>)} />
+                <Route path='/' element={<Home />} />
+              
             </Routes>
+            
         </Router>
     )
 }
