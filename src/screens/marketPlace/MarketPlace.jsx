@@ -12,9 +12,10 @@ const MarketPlace = () => {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             backgroundAttachment="fixed"
-            py="20"
+            pt="72px"
             h="full"
             w="full"
+            alignItems="flex-start"
         >
             <FilterSideBar />
             <MarketPlaceData />
