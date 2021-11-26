@@ -1,10 +1,11 @@
 import React from 'react'
 import { Image } from '@chakra-ui/image'
 import { HStack, VStack, Flex, Text, Heading } from '@chakra-ui/layout'
-import gods from '../../assets/images/herodogs.png'
 import { InfoIcon, Search2Icon } from '@chakra-ui/icons'
 import { Input, InputGroup, InputRightElement } from '@chakra-ui/input'
 import { Button, ButtonGroup } from '@chakra-ui/button'
+
+import gods from '../../assets/images/herodogs.png'
 
 
 const HeroSection = () => {
