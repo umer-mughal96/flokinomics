@@ -21,7 +21,7 @@ const Header = () => {
                 </Box>
                 <Box w="85%" h="40px" bg="" d='flex' alignItems='center'>
                     {/* <Input border='none' borderRadius='0' placeholder="Flokinomics" w='30%' bg='black' /> */}
-                    <InputGroup w='xs' bg='black'>
+                    <InputGroup w='xs' bg='black' borderRadius="4px">
                         <InputRightElement
                             pointerEvents="none"
                             children={<SearchIcon color="gray.300" />}
@@ -47,7 +47,9 @@ const Header = () => {
                             <MenuItem>Attend a Workshop</MenuItem>
                         </MenuList>
                     </Menu>
-                    <Button border fontWeight='200' bg='transparent' color='#00CEFF' border='1px solid #00CEFF' borderRadius='20px' mx='4' fontSize='12px' bgColor='#163f49' p='2px 6px'>Connect Wallet</Button>
+                    <Button border fontWeight='200' size="xs" py="2" bg='transparent' color='#00CEFF' 
+                    border='1px solid #00CEFF' borderRadius='full' mx='4' fontSize='12px' 
+                    bgColor='#163f49' p='2px 6px'>Connect Wallet</Button>
                 </Box>
             </HStack>
         </Container>

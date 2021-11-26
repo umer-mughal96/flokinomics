@@ -11,11 +11,11 @@ const FeaturedCollections = () => {
             <Flex w={{ base: '95%', md: '90%', lg: '90%' }}>
                 <Tabs variant="soft-rounded" w="full" color="white" >
                     <TabList my="9" bg='#1d1d1d' borderRadius="full" w={{ base: '90%', md: '70%', lg: '60%' }} mx="auto" colorScheme="blue" alignItems="center" justifyContent="space-between">
-                        <Tab color="white">Artwork</Tab>
-                        <Tab color="white">Music</Tab>
-                        <Tab color="white">Tranding Cards</Tab>
-                        <Tab color="white">Collectibles</Tab>
-                        <Tab color="white">Utilities</Tab>
+                        <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Artwork</Tab>
+                        <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Music</Tab>
+                        <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Tranding Cards</Tab>
+                        <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Collectibles</Tab>
+                        <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Utilities</Tab>
                     </TabList>
                     <TabPanels >
                         <TabPanel >

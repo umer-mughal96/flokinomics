@@ -1,15 +1,19 @@
 import React from 'react'
 import Products from './Products'
-import { HStack, Text } from '@chakra-ui/layout'
+import { VStack, Text, Flex, Spacer } from '@chakra-ui/layout'
 
 
 const MarketPlaceData = () => {
     return (
-        <HStack w="75%">
+        <VStack w="75%" alignItems="flex-start">
             <Text color="white">
                 MarketPlaceData
             </Text>
-        </HStack>
+            <Flex flexWrap="wrap">
+                <Products />
+                {/* <Spacer /> */}
+            </Flex>
+        </VStack>
     )
 }
 

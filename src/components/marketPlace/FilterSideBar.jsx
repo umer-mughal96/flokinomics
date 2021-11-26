@@ -1,13 +1,18 @@
-import { HStack, Text } from '@chakra-ui/layout'
+import { VStack } from '@chakra-ui/layout'
 import React from 'react'
+import Categories from './sideBarFilterComp/Categories'
+import FilterComp from './sideBarFilterComp/FilterComp'
+import Payment from './sideBarFilterComp/Payment'
+import Status from './sideBarFilterComp/Status'
 
 const FilterSideBar = () => {
     return (
-        <HStack w="25%">
-            <Text color="white">
-                FilterSideBar
-            </Text>
-        </HStack>
+        <VStack w="25%" bgColor="#1d1d1d" h="100vh" px="5">
+            <FilterComp />
+            <Status />
+            <Categories />
+            <Payment />
+        </VStack>
     )
 }
 
