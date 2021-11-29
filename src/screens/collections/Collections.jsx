@@ -4,7 +4,8 @@ import bgimg from '../../assets/images/sitebg.jpg'
 import MarketPlaceData from '../../components/marketPlace/MarketPlaceData'
 import FilterSideBar from '../../components/sideBar/FilterSideBar'
 
-const MarketPlace = () => {
+
+const Collections = () => {
     return (
         <HStack
             backgroundImage={bgimg}
@@ -17,10 +18,10 @@ const MarketPlace = () => {
             w="full"
             alignItems="flex-start"
         >
-            <FilterSideBar />
-            <MarketPlaceData />
+            <FilterSideBar isCollections={true} />
+            <MarketPlaceData isCollections={true} />
         </HStack>
     )
 }
 
-export default MarketPlace
+export default Collections

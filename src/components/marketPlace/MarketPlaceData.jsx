@@ -1,17 +1,31 @@
 import React from 'react'
 import Products from './Products'
-import { VStack, Text, Flex, Spacer } from '@chakra-ui/layout'
+import { VStack, Text, Flex, Spacer, HStack, Heading } from '@chakra-ui/layout'
+import { Select } from '@chakra-ui/select'
+import { MdArrowDropDown } from '@chakra-ui/icons'
 
-
-const MarketPlaceData = () => {
+const MarketPlaceData = ({isCollections}) => {
     return (
-        <VStack w="75%" alignItems="flex-start">
-            <Text color="white">
-                MarketPlaceData
-            </Text>
-            <Flex flexWrap="wrap">
+        <VStack w="75%" alignItems="flex-start" px="5">
+            <HStack justifyContent="space-between" w="full" pt="9">
+                <HStack>
+                    <Heading as="h6" size="xs" color="white">{isCollections ? "6 Results" : "1,490,743 Results"}</Heading>
+                </HStack>
+                <HStack>
+                    <Select placeholder="All Items" color="white">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </Select>
+                    <Select placeholder="Sort By" color="white">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </Select>
+                </HStack>
+            </HStack>
+            <Flex flexWrap="wrap" alignItems="center" justifyContent="space-between" w="full" m="auto">
                 <Products />
-                {/* <Spacer /> */}
             </Flex>
         </VStack>
     )

@@ -1,7 +1,7 @@
 import { LockIcon } from '@chakra-ui/icons'
 import { Image } from '@chakra-ui/image'
 import { Flex, Text, VStack } from '@chakra-ui/layout'
-import React from 'react'
+import React, { useState } from 'react'
 import pic1 from '../../assets/images/arrayimg.jpg'
 import pic2 from '../../assets/images/sitebg.jpg'
 import pic3 from '../../assets/images/member_2.jpg'
@@ -175,10 +175,12 @@ const Products = () => {
             productLike: '1'
         },
     ]
+    const [show, setShow] = React.useState(false)
+    const handleClick = () => setShow(!show)
     return (
         <>
             {productArray.map((productObj, index) =>
-                <VStack color="white" w="300px" my="3" alignItems="flex-start" mx="auto" bgColor="black" borderRadius="xl" alignItems="flex-start" key={index}>
+                <VStack color="white" w={{base: '100%', md: '32%' }} my="2" alignItems="flex-start" bgColor="black" borderRadius="xl" alignItems="flex-start" key={index}>
                     <Image borderTopLeftRadius="xl" borderTopRightRadius="xl" w="full" h="40vh" src={productObj.productImg} alt="Dan Abramov" />
                     <Text px="2" fontSize="sm">{productObj.productName}</Text>
                     <Flex justifyContent="space-between" px="2" w="full">
@@ -191,13 +193,10 @@ const Products = () => {
                     </Flex>
                     <Flex justifyContent="space-between" px="2" w="full" bgColor="#1d1d1d" py="2" borderBottomLeftRadius="xl" borderBottomRightRadius="xl">
                         <Text fontSize="sm">{productObj.productBuy}</Text>
-                        {
-                            productArray.filter((data) => !data === index ? 
-                            < FontAwesomeIcon icon={farHeart} />
+                        {show ?
+                            <FontAwesomeIcon icon={faHeart} onClick={handleClick} />
                             :
-                            <FontAwesomeIcon onClick={(index) => productArray.push(index)} icon={faHeart} />
-                            )
-                            
+                            <FontAwesomeIcon icon={farHeart} onClick={() => setShow(true)} />
                         }
                     </Flex>
                 </VStack>
