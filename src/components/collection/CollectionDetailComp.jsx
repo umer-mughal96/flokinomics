@@ -2,15 +2,17 @@ import { Box, Text, VStack, HStack } from '@chakra-ui/layout'
 import React from 'react'
 import { Image } from "@chakra-ui/react"
 
-const CollectionDetail = () => {
+const CollectionDetailComp = () => {
     return (
-        <>  
-            <hr style={{ height: '1px', width: '100%' }} />
-            <VStack w="full">
+        <>
+            <VStack w="full"
+                borderTop="1px solid white"
+                pt="4"
+            >
                 <HStack
                     h="full"
                     w="full"
-                    px="4"
+                    px="0.5"
                 >
                     <Image
                         boxSize="70px"
@@ -34,4 +36,4 @@ const CollectionDetail = () => {
     )
 }
 
-export default CollectionDetail
+export default CollectionDetailComp
