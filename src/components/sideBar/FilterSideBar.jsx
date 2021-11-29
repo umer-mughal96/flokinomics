@@ -7,7 +7,7 @@ import Categories from '../sideBarFilterComp/Categories';
 import CollectionsName from '../productsCollections/CollectionsName';
 import CollectionsColors from '../productsCollections/CollectionsColors';
 import { useLocation } from "react-router-dom";
-import CollectionDetail from '../collection/CollectionDetail';
+import CollectionDetailComp from '../collection/CollectionDetailComp';
 
 const FilterSideBar = ({ isCollections }) => {
     const location = useLocation();
@@ -24,17 +24,23 @@ const FilterSideBar = ({ isCollections }) => {
                     : location.pathname === '/collection' ?
                         <>
                             <CollectionsName />
-                            <CollectionDetail />
                             <Status />
                             <Categories />
                         </>
-                        :
-                        <>
-                            <FilterComp />
-                            <Status />
-                            <Categories />
-                            <Payment />
-                        </>
+                        : location.pathname === '/collectiondetail' ?
+                            <>
+                                <CollectionsName iscollectiondetail={true} />
+                                <CollectionDetailComp />
+                                <Status />
+                                <Categories />
+                            </>
+                            :
+                            <>
+                                <FilterComp />
+                                <Status />
+                                <Categories />
+                                <Payment />
+                            </>
             }
         </VStack>
     )

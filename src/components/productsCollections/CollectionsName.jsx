@@ -3,15 +3,14 @@ import React from 'react'
 import bgimg from '../../assets/images/sitebg.jpg'
 import { Image } from "@chakra-ui/react"
 
-const CollectionsName = () => {
+const CollectionsName = ({ iscollectiondetail }) => {
     return (
         <VStack
-            // pt="72px"
             w="full"
             position="relative"
-            // bgColor="red"
-            h="150px"
-        >
+            h="130px"
+            mb={iscollectiondetail? '1' : '0px'}
+            >
             <Box
                 backgroundImage={bgimg}
                 backgroundPosition="center"
@@ -20,27 +19,27 @@ const CollectionsName = () => {
                 w="full"
             />
             <HStack
-                position="absolute"
                 alignItems="center"
+                position="absolute"
                 left="0px"
                 top="15px"
                 h="full"
                 w="full"
-                px="4"
+                px="6"
             >
                 <Image
-                    boxSize="70px"
+                    boxSize="60px"
                     borderRadius="xl"
                     objectFit="cover"
                     src="https://bit.ly/sage-adebayo"
                     alt="Segun Adebayo"
                 />
-                <Box color="white" pt="3" pl="5">
+                <Box color="white" pt="10" pl="5">
                     <Text textAlign="left" size="lg">Artist Person</Text>
                     <Text fontSize="sm" color="gray">@Artist Person</Text>
                 </Box>
             </HStack>
-        </VStack>
+        </VStack >
     )
 }
 

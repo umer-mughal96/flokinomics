@@ -11,6 +11,7 @@ import ProductsCollections from '../../screens/productsCollections/ProductsColle
 import Collections from '../../screens/collections/Collections';
 import Creator from '../../screens/creator/Creator';
 import Post from '../../screens/postpage/Post';
+import CollectionDetail from '../../screens/collectionDetail/CollectionDetail';
 
 const MainRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const MainRoutes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/productcollection" element={<ProductsCollections />} />
         <Route path="/collection" element={<Collections />} />
+        <Route path="/collectiondetail" element={< CollectionDetail />} />
         <Route path="/creator" element={<Creator />} />
         <Route path="/post" element={<Post />} />
       </Routes>
