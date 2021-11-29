@@ -13,7 +13,7 @@ const Payment = () => {
                             <Box flex="1" textAlign="left">
                                 Payment
                             </Box>
-                            <AccordionIcon />
+                            <AccordionIcon bg='white' color='black' borderRadius='50%' />
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>

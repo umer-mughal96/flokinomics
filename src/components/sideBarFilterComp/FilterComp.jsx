@@ -6,13 +6,13 @@ const FilterComp = () => {
     return (
         <VStack w="full">
             <Accordion allowToggle w="full" color="white">
-                <AccordionItem borderTop="none">
+                <AccordionItem  borderTop="none">
                     <h2>
                         <AccordionButton >
                             <Box flex="1" textAlign="left">
                                 Filter
                             </Box>
-                            <AccordionIcon />
+                            <AccordionIcon bg='white' color='black' borderRadius='50%' />
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>

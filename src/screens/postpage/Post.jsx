@@ -6,13 +6,9 @@ import bgimg from '../../assets/images/sitebg.jpg'
 import person1 from '../../assets/images/member_1.jpg'
 import { Image } from '@chakra-ui/image'
 import { Divider } from "@chakra-ui/react"
-
 import { FormControl, FormLabel, FormHelperText } from '@chakra-ui/form-control'
 import { Textarea } from "@chakra-ui/react"
 import { Button } from '@chakra-ui/button'
-
-
-
 
 const Post = () => {
     return (
@@ -72,54 +68,54 @@ const Post = () => {
                                 <Divider />
                                 <VStack className='bidding-list' w='full'>
                                     <Heading as='h4' size='xs' pt='4' >Bids</Heading>
-                                    <VStack height='200px' overflow='auto' w='full' >
+                                    <VStack height='160px' overflow='auto' w='full' >
                                         <Flex py='1' w='full' px='0px'>
                                             <Box>
-                                                <Text>@Collector1</Text>
+                                                <Text fontSize='sm'>@Collector1</Text>
                                             </Box>
                                             <Spacer />
                                             <Box>
-                                                <Text fontWeight='bold'>0.99 BNB</Text>
+                                                <Text fontWeight='bold'  fontSize='sm' >0.99 BNB</Text>
                                                 <Text fontSize='xs' color='#8e8e8e'>5 minutes ago</Text>
                                             </Box>
                                         </Flex>
                                         <Flex py='1' w='full'>
                                             <Box >
-                                                <Text>@Collector2</Text>
+                                                <Text fontSize='sm'>@Collector2</Text>
                                             </Box>
                                             <Spacer />
                                             <Box>
-                                                <Text fontWeight='bold'>0.99 BNB</Text>
+                                                <Text fontWeight='bold' fontSize='sm'>0.99 BNB</Text>
                                                 <Text fontSize='xs' color='#8e8e8e'>5 minutes ago</Text>
                                             </Box>
                                         </Flex>
                                         <Flex py='1' w='full'>
                                             <Box p='4' p='0'>
-                                                <Text>@Collector3</Text>
+                                                <Text fontSize='sm'>@Collector3</Text>
                                             </Box>
                                             <Spacer />
                                             <Box p='4' p='0'>
-                                                <Text fontWeight='bold'>0.99 BNB</Text>
+                                                <Text fontWeight='bold' fontSize='sm'>0.99 BNB</Text>
                                                 <Text fontSize='xs' color='#8e8e8e'>5 minutes ago</Text>
                                             </Box>
                                         </Flex>
                                         <Flex py='1' w='full'>
                                             <Box p='4' p='0'>
-                                                <Text>@Collector3</Text>
+                                                <Text fontSize='sm'>@Collector3</Text>
                                             </Box>
                                             <Spacer />
                                             <Box p='4' p='0'>
-                                                <Text fontWeight='bold'>0.99 BNB</Text>
+                                                <Text fontWeight='bold' fontSize='sm'>0.99 BNB</Text>
                                                 <Text fontSize='xs' color='#8e8e8e'>5 minutes ago</Text>
                                             </Box>
                                         </Flex>
                                         <Flex py='1' w='full'>
                                             <Box p='4' p='0'>
-                                                <Text>@Collector3</Text>
+                                                <Text fontSize='sm'>@Collector3</Text>
                                             </Box>
                                             <Spacer />
                                             <Box p='4' p='0'>
-                                                <Text fontWeight='bold'>0.99 BNB</Text>
+                                                <Text fontWeight='bold' fontSize='sm'>0.99 BNB</Text>
                                                 <Text fontSize='xs' color='#8e8e8e'>5 minutes ago</Text>
                                             </Box>
                                         </Flex>

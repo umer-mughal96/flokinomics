@@ -30,3 +30,8 @@ html {
 .bidding-list ::-webkit-scrollbar {
   display: none;
 }
+
+.header-wrapper .active{
+  color: #fff;
+  font-weight:600;
+}
