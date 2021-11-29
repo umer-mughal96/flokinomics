@@ -26,3 +26,7 @@ html {
 .collections-slider::-webkit-scrollbar {
   display: none;
 }
+
+.bidding-list ::-webkit-scrollbar {
+  display: none;
+}
