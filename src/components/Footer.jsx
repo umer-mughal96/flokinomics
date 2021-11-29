@@ -21,13 +21,7 @@ const Footer = () => {
                         </MenuButton>
                         <MenuList>
                             <MenuItem minH="48px">
-                                {/* <Image
-                                    boxSize="2rem"
-                                    borderRadius="full"
-                                    src="https://placekitten.com/100/100"
-                                    alt="Fluffybuns the destroyer"
-                                    mr="12px"
-                                /> */}
+                                
                                 <span>Fluffybuns the Destroyer</span>
                             </MenuItem>
                             <MenuItem minH="40px">

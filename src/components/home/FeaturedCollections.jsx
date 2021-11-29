@@ -9,7 +9,7 @@ const FeaturedCollections = () => {
         <VStack w="full" pt="9">
             <Heading color="white">Featured Collections</Heading>
             <Flex w={{ base: '95%', md: '90%', lg: '90%' }}>
-                <Tabs variant="soft-rounded" w="full" color="white">
+                <Tabs variant="soft-rounded" w="full" color="white" >
                     <TabList my="9" bg='#1d1d1d' borderRadius="full" w={{ base: '90%', md: '70%', lg: '60%' }} mx="auto" colorScheme="blue" alignItems="center" justifyContent="space-between">
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Artwork</Tab>
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Music</Tab>
@@ -17,8 +17,8 @@ const FeaturedCollections = () => {
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Collectibles</Tab>
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} color="white">Utilities</Tab>
                     </TabList>
-                    <TabPanels>
-                        <TabPanel>
+                    <TabPanels >
+                        <TabPanel >
                             <CollectionsItem />
                             <CollectionsItem isMovers={true} />
                             <CollectionsItem isNewest={true} />

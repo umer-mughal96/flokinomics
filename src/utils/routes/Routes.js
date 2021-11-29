@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import Home from '../../screens/home/Home';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Create from '../../screens/home/Create';
-import BuyFlokin from '../../screens/home/Buy Flokin/BuyFlokin';
+import Create from '../../screens/create/Create';
+import BuyFlokin from '../../screens/Buy Flokin/BuyFlokin';
 import MarketPlace from '../../screens/marketPlace/MarketPlace';
 import About from '../../screens/About/About';
 import ProductsCollections from '../../screens/productsCollections/ProductsCollections';
 import Collections from '../../screens/collections/Collections';
+import Creator from '../../screens/creator/Creator';
+import Post from '../../screens/postpage/Post';
 
 const MainRoutes = () => {
   return (
@@ -23,6 +24,8 @@ const MainRoutes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/productcollection" element={<ProductsCollections />} />
         <Route path="/collection" element={<Collections />} />
+        <Route path="/creator" element={<Creator />} />
+        <Route path="/post" element={<Post />} />
       </Routes>
       <Footer />
     </Router>
