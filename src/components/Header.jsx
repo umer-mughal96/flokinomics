@@ -28,13 +28,10 @@ const Header = () => {
                 <HStack px='46' m='auto' spacing="24px">
                     <Box w="15%" h="40px" d='flex' alignItems='center' d='flex' >
                         <Image src={logo}
-                            width='100%'
                             height='100%'
                             objectFit='contain'
-
-
                         />
-                        <Text color='#fff' cursor='pointer' onClick={() => navigate('/')}>Flokinomics</Text>
+                        <Text color='#fff' cursor='pointer' ml='2' onClick={() => navigate('/')}>Flokinomics</Text>
                     </Box>
                     <Box w="85%" h="40px" bg="" d='flex' alignItems='center'>
                         {/* <Input border='none' borderRadius='0' placeholder="Flokinomics" w='30%' bg='black' /> */}
@@ -57,11 +54,8 @@ const Header = () => {
                                 {/* <Avatar mx='3' src="https://bit.ly/broken-link" /> */}
                             </MenuButton>
                             <MenuList>
-                                <MenuItem>Download</MenuItem>
-                                <MenuItem>Create a Copy</MenuItem>
-                                <MenuItem>Mark as Draft</MenuItem>
-                                <MenuItem>Delete</MenuItem>
-                                <MenuItem>Attend a Workshop</MenuItem>
+                                <MenuItem>Creator</MenuItem>
+                                <MenuItem>Settings</MenuItem>
                             </MenuList>
                         </Menu>
                         <Button border fontWeight='200' size="xs" py="2" bg='transparent' color='#00CEFF'

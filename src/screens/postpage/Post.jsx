@@ -127,7 +127,7 @@ const Post = () => {
                                 <Box>
                                     <VStack p='4px 0px 0px 0px'>
                                         <Box pos='relative'>
-                                            <Input placeholder='Basic usage' bg='black' color='white' border='1px solid trasnparent' borderRadius='' placeholder='1.00' />
+                                            <Input _placeholder={{ color: 'white' }} bg='black' color='white' border='1px solid trasnparent' borderRadius='' placeholder='1.00' />
                                             <Text className='coinname' right='4' top='2' pos='absolute'>BNB</Text>
                                         </Box>
                                         <Button bg='#fff' color='black' w='100%'>Place Bid</Button>

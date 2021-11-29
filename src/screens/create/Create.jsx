@@ -77,6 +77,8 @@ const Create = () => {
                     <Input variant="outline"  _placeholder={{ color: '#8e8e8e' }} placeholder="Title" bg='#1d1d1d' border='#3d3d3e' color='#797979' />
                     <Textarea placeholder='Description'  _placeholder={{ color: '#8e8e8e' }} my='3' rows='5' bg='#1d1d1d' border='#3d3d3e' color='#797979' />
                     <Heading as="h3" size='sm' py='2' color='white'>Royalities</Heading>
+
+                    
                     <Slider aria-label="slider-ex-1" defaultValue={30} >
                         <SliderTrack bgColor='#1d1d1d' height='10px' borderRadius='5px'>
                             <SliderFilledTrack bgColor='#f3c03e' />
