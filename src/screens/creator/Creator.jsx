@@ -25,33 +25,33 @@ const Creator = () => {
                         </Box>
                         <FormControl id="name" >
                             <FormLabel color='white'>Name</FormLabel>
-                            <Input type="text" bg='#1d1d1d' borderColor='#3d3d3d' />
+                            <Input _placeholder={{ color: 'white' }} color='white' placeholder='Human Person' type="text" bg='#1d1d1d' borderColor='#3d3d3d' />
                         </FormControl>
                         <FormControl id="username" pt='4'>
                             <FormLabel color='white'>Username</FormLabel>
-                            <Input type="text" bg='#1d1d1d' borderColor='#3d3d3d' />
+                            <Input _placeholder={{ color: 'white' }} color='white' type="text" bg='#1d1d1d' borderColor='#3d3d3d' placeholder='@ArtistPerson' />
                         </FormControl>
                     </VStack>
                     <VStack w='30%' pt='60px' >
                         <FormControl id="websitefield" pt='4'>
                             <FormLabel color='white'>Website</FormLabel>
-                            <Input type="text" bg='#1d1d1d' borderColor='#3d3d3d' />
+                            <Input _placeholder={{ color: 'white' }} color='white' type="text" bg='#1d1d1d' borderColor='#3d3d3d'  placeholder='www.thispersondoesnotexist.com'  />
                         </FormControl>
                         <FormControl id="walletfield" pt='4'>
                             <FormLabel color='white'>Wallet</FormLabel>
-                            <Input type="text" bg='#1d1d1d' borderColor='#3d3d3d' />
+                            <Input _placeholder={{ color: '#8e8e8e' }} color='white' type="text" bg='#1d1d1d' borderColor='#3d3d3d' placeholder='Coinbase Wallet - #0000000000' />
                         </FormControl>
                         <FormControl id="twitterfield" pt='4'>
                             <FormLabel color='white'>Twitter</FormLabel>
-                            <Input type="text" bg='#1d1d1d' borderColor='#3d3d3d' />
+                            <Input _placeholder={{ color: '#8e8e8e' }} color='white' type="text" bg='#1d1d1d' borderColor='#3d3d3d' placeholder='twitter.com/artistperson01' />
                         </FormControl>
                         <FormControl id="instafield" pt='4'>
                             <FormLabel color='white'>Instagram</FormLabel>
-                            <Input type="text" bg='#1d1d1d' borderColor='#3d3d3d' />
+                            <Input _placeholder={{ color: '#8e8e8e' }} color='white' type="text" bg='#1d1d1d' borderColor='#3d3d3d' placeholder='instagram.com/artistpersonNFT' />
                         </FormControl>
                         <FormControl id="instafield" pt='4'>
                             <FormLabel color='white'>Telegram</FormLabel>
-                            <Input type="text" bg='#1d1d1d' borderColor='#3d3d3d' />
+                            <Input _placeholder={{ color: '#8e8e8e' }} color='white' type="text" bg='#1d1d1d' borderColor='#3d3d3d' placeholder='telegram.com/artistpersonNFT' />
                         </FormControl>
 
                     </VStack>

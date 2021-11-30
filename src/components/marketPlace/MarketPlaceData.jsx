@@ -34,10 +34,12 @@ const MarketPlaceData = ({ isCollections }) => {
                         <option value="option2">Option 2</option>
                         <option value="option3">Option 3</option>
                     </Select>
-                    <Select placeholder="Sort By" color="white">
-                        <option value="option1">Option 1</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
+                    <Select placeholder="Sort By" bg='transparent'
+                        borderColor='tomato'
+                        color='white'>
+                        <option value="option1" bgColor="red">Option 1</option>
+                        <option value="option2" bgColor="red">Option 2</option>
+                        <option value="option3" bgColor="red">Option 3</option>
                     </Select>
                 </HStack>
             </HStack>

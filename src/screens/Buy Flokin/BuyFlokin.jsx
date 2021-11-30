@@ -4,6 +4,7 @@ import sitebg from '../../assets/images/sitebg.jpg'
 import gods from '../../assets/images/herodogs.png'
 import { Image } from '@chakra-ui/image'
 import { Stack, Box, Heading, Text, UnorderedList, ListItem } from '@chakra-ui/layout'
+import { Flex } from '@chakra-ui/layout'
 
 
 const BuyFlokin = () => {
