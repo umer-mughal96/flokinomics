@@ -9,10 +9,11 @@ import CollectionsColors from '../productsCollections/CollectionsColors';
 import { useLocation } from "react-router-dom";
 import CollectionDetailComp from '../collection/CollectionDetailComp';
 
-const FilterSideBar = ({ isCollections }) => {
+const FilterSideBar = ({ isCollections, isMobileSideBar }) => {
     const location = useLocation();
+
     return (
-        <VStack w="25%" bgColor="#1d1d1d" h={isCollections ? '130vh' : '100vh'} px="5" position="sticky" top="0">
+        <VStack d={{base: 'none', md: 'none', lg: 'block'}} w="25%" bgColor="#1d1d1d" h={isCollections ? '130vh' : '100vh'} px="5" position="sticky" top="0">
             {
                 location.pathname === `/productcollection` ?
                     <>

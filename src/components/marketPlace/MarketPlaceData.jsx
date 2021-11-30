@@ -1,15 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Products from './Products'
-import { VStack, Text, Flex, Spacer, HStack, Heading } from '@chakra-ui/layout'
+import { VStack, Flex, HStack, Heading, Text } from '@chakra-ui/layout'
 import { Select } from '@chakra-ui/select'
-import { MdArrowDropDown } from '@chakra-ui/icons'
+import MobileSideBar from '../sideBar/MobileSideBar'
+import { HamburgerIcon } from '@chakra-ui/icons'
 
-const MarketPlaceData = ({isCollections}) => {
+const MarketPlaceData = ({ isCollections }) => {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
-        <VStack w="75%" alignItems="flex-start" px="5">
-            <HStack justifyContent="space-between" w="full" pt="9">
-                <HStack>
-                    <Heading as="h6" size="xs" color="white">{isCollections ? "6 Results" : "1,490,743 Results"}</Heading>
+        <VStack w={{ base: '100%', md: '100%', lg: '75%' }} alignItems="flex-start" px="5" >
+            <HStack justifyContent="space-between" w="full" pt="9" d={{ base: 'block', md: 'block', lg: 'flex' }}>
+                <HStack justifyContent="space-between" alignItems="center">
+                    <Flex mb="3" alignItems="center" >
+                        <HamburgerIcon color="white" size="lg" d={{ base: 'block', md: 'block', lg: 'none' }} onClick={() => setIsOpen(true)} />
+                        <Text ml="2" color="white">
+                            Marketplase menu
+                        </Text>
+                        {
+                            isOpen ?
+                                // <MobileSideBar setIsOpen={()=> setIsOpen(false)} isOpen={isOpen} />
+                                <MobileSideBar setIsOpen={() => setIsOpen(false)} isOpen={isOpen} />
+                                : null
+                        }
+                    </Flex>
+                    <Flex flex="1" >
+                        <Heading as="h6" textAlign="right" size="xs" color="white">{isCollections ? "6 Results" : "1,490,743 Results"}</Heading>
+                    </Flex>
                 </HStack>
                 <HStack>
                     <Select placeholder="All Items" color="white">

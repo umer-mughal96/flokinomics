@@ -14,7 +14,7 @@ const Create = () => {
     return (
         <Container className='create-page-container' bgImage={bgimg} backgroundAttachment='fixed' backgroundRepeat='no-repeat' maxW='full'>
             <Stack direction={["column", "row"]} spacing="24px" py='100px' maxW='1100px' m='auto'>
-                <Box w='30%' textAlign='center' borderRadius='8px' >
+                <Box w={{base: '100%', md: '100%', lg: '30%'}} textAlign='center' borderRadius='8px' >
                     <Box p='2' bg='#1d1d1d' color='white' marginBottom='16px' borderRadius='6px'>
                         <Box  onClick={() => document.getElementById('file').click()} border='1px dashed #ccc' borderRadius='8px' py='7'>
                             <AddIcon fontSize='34px' my='4' />
@@ -73,7 +73,7 @@ const Create = () => {
                         </AccordionItem>
                     </Accordion>
                 </Box>
-                <Box w='30%' >
+                <Box w={{base: '100%', md: '100%', lg: '30%'}} >
                     <Input variant="outline" placeholder="Title" bg='#1d1d1d' border='#3d3d3e' color='#797979' />
                     <Textarea placeholder='Description' my='3' rows='5' bg='#1d1d1d' border='#3d3d3e' color='#797979' />
                     <Heading as="h3" size='sm' py='2' color='white'>Royalities</Heading>
@@ -84,7 +84,7 @@ const Create = () => {
                         <SliderThumb bgColor='#f3c03e' />
                     </Slider>
                 </Box>
-                <Box w="30%">
+                <Box w={{base: '100%', md: '100%', lg: '30%'}}>
                     <Accordion defaultIndex={[0]} allowMultiple>
                         <AccordionItem bg='#1d1d1d' color='white' borderRadius='6px' border='#3d3d3e'>
                             <h2>
@@ -103,7 +103,7 @@ const Create = () => {
                             </AccordionPanel>
                         </AccordionItem>
                     </Accordion>
-                    <Button bgColor='#4a4a4a' p='8px 56px' mt='200px' >Create NFT</Button>
+                    <Button bgColor='#4a4a4a' p='8px 56px' mt={{base: '4', md: '4', lg: '200px'}} >Create NFT</Button>
                 </Box>
             </Stack>
         </Container>

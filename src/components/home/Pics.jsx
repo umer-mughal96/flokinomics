@@ -1,6 +1,13 @@
 import React from 'react'
 import { HStack, VStack, Flex, Text, Heading, Box } from '@chakra-ui/layout'
-import pic1 from '../../assets/images/arrayimg.jpg'
+import pic1 from '../../assets/images/dubai.jpg'
+import pic2 from '../../assets/images/beach.jpg'
+import pic3 from '../../assets/images/tree.jpg'
+import pic4 from '../../assets/images/watefall.jpg'
+import pic5 from '../../assets/images/garden.jpg'
+import pic6 from '../../assets/images/dubai.jpg'
+import pic7 from '../../assets/images/montain.jpg'
+import pic8 from '../../assets/images/piccard.jpg'
 
 const Pics = () => {
 
@@ -10,38 +17,38 @@ const Pics = () => {
             picTitle: 'Seasonal'
         },
         {
-            picImg: pic1,
+            picImg: pic2,
             picTitle: 'Seasonal'
         },
         {
-            picImg: pic1,
+            picImg: pic3,
             picTitle: 'Seasonal'
         },
         {
-            picImg: pic1,
+            picImg: pic4,
             picTitle: 'Seasonal'
         },
         {
-            picImg: pic1,
+            picImg: pic5,
             picTitle: 'Seasonal'
         },
         {
-            picImg: pic1,
+            picImg: pic6,
             picTitle: 'Seasonal'
         },
         {
-            picImg: pic1,
+            picImg: pic7,
             picTitle: 'Seasonal'
         },
         {
-            picImg: pic1,
+            picImg: pic8,
             picTitle: 'Seasonal'
         },
     ]
     return (
         <VStack pb="9">
             <Heading my="5" color="white">Our Pics</Heading>
-            <Flex flexWrap='wrap' w={{base: '90%', md: '80%', lg: '70%'}} m="auto" alignItems="center" justifyContent="space-evenly">
+            <Flex flexWrap='wrap' w={{base: '100%', md: '100%', lg: '80%'}} m="auto" alignItems="center" justifyContent="space-evenly">
                 {picsData.map((data, index) =>
                     <Box
                         backgroundImage={data.picImg}
@@ -49,9 +56,9 @@ const Pics = () => {
                         backgroundRepeat="no-repeat"
                         backgroundSize="cover"
                         borderRadius="lg"
-                        h="150px"
-                        w="200px"
-                        my="4"
+                        h="170px"
+                        w={{base: '90%', md: '260px'}}
+                        my="1"
                         key={index}
                     >
                         <Flex w="full" h="full" alignItems="flex-end" justifyContent="flex-end">
