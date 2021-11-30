@@ -8,7 +8,7 @@ import { Button } from '@chakra-ui/button'
 const FeaturedCollections = () => {
     return (
         <VStack w="full" py="16">
-            <Heading color="white">Featured Collections</Heading>
+            <Heading color="white" fontSize={{base: 'lg', md: '2xl', lg: '3xl'}}>Featured Collections</Heading>
             <Flex w={{ base: '95%', md: '90%', lg: '95%' }}>
                 <Tabs variant="soft-rounded" w="full" color="white" >
                     <TabList className="collections-slider" overflow="auto" my="2" bg='#1d1d1d' borderRadius="full" w={{ base: '100%', md: '100%', lg: '60%' }} mx="auto" alignItems="center" justifyContent="space-between">
