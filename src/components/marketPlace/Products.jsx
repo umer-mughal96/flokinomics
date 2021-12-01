@@ -192,11 +192,11 @@ const Products = () => {
                         <Text fontSize="sm">{productObj.paymentBank}</Text>
                     </Flex>
                     <Flex justifyContent="space-between" px="2" w="full" bgColor="#1d1d1d" py="2" borderBottomLeftRadius="xl" borderBottomRightRadius="xl">
-                        <Text fontSize="sm">{productObj.productBuy}</Text>
+                        <Text fontSize="sm"  cursor="pointer">{productObj.productBuy}</Text>
                         {show ?
-                            <FontAwesomeIcon icon={faHeart} onClick={handleClick} />
+                            <FontAwesomeIcon  cursor="pointer" icon={faHeart} onClick={handleClick} />
                             :
-                            <FontAwesomeIcon icon={farHeart} onClick={() => setShow(true)} />
+                            <FontAwesomeIcon  cursor="pointer" icon={farHeart} onClick={() => setShow(true)} />
                         }
                     </Flex>
                 </VStack>

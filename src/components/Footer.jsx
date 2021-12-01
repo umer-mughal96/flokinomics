@@ -18,7 +18,7 @@ const Footer = () => {
         <VStack maxW='full' bg='#0f0f0f'> 
         <Container maxW='1300px' >
             <Stack direction={["column", "row"]} spacing="24px" py='60px' color='#8b8b8b'>
-                <Box w="30%" h="">
+                <Box w={{base: '100%', md: '30%'}} h="">
                     <Text>
                         Flokinomics Marketplace is a next generation marketplace where artists
                         and collectors can create,sell and collect digital items secured with blockchain.
@@ -44,7 +44,7 @@ const Footer = () => {
                         </MenuList>
                     </Menu>
                 </Box>
-                <Box w="30%" h="">
+                <Box w={{base: '100%', md: '30%'}} h="">
                     <Text color='white' pb='18px' >Marketplace</Text>
                     <UnorderedList style={{ listStyleType: 'none', marginLeft: '0px', }} spacing='16px'>
                         <ListItem ><Link>Explore</Link></ListItem>
@@ -53,7 +53,7 @@ const Footer = () => {
                         <ListItem ><Link>Privacy Policy</Link></ListItem>
                     </UnorderedList>
                 </Box>
-                <Box w="30%" h="">
+                <Box w={{base: '100%', md: '30%'}} h="">
                     <Text color='white' pb='18px'>Resources</Text>
                     <UnorderedList spacing='16px' style={{ listStyleType: 'none', marginLeft: '0px' }}>
                         <ListItem ><Link>White Paper</Link></ListItem>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HStack, Flex, Text, Box } from '@chakra-ui/layout'
+import { HStack, Stack, Flex, Text, Box } from '@chakra-ui/layout'
 import pic1 from '../../../assets/images/arrayimg.jpg'
 
 const CollectionsItem = ({isMovers, isNewest}) => {
@@ -54,19 +54,22 @@ const CollectionsItem = ({isMovers, isNewest}) => {
         },
     ]
     return (
-        <HStack w="full" w="red" h="full" alignItems="flex-start">
+        <Stack  direction={['column', 'row']} w="full" w="red" h="full" alignItems="flex-start">
             <Box
                 borderRadius="lg"
                 bgColor="#1d1d1d"
+                // h="150px"
+                // w={{base: '10%', md: '20%'}}
                 h="150px"
-                w={{base: '10%', md: '20%'}}
-                my="4"
+                        minWidth="200px"
+                my="1"
             >
                 <Flex w="full" h="full" alignItems="center" justifyContent="center">
-                    <Text color="white" fontSize="sm" py="1.5" w="full" textAlign="center"> {isMovers ? "Top Movers" : isNewest?  "Newest Collections" : "Hot Collections"}</Text>
+                    <Text color="white" fontSize="sm" py="1.5" w="full" textAlign="center"> 
+                    {isMovers ? "Top Movers" : isNewest?  "Newest Collections" : "Hot Collections"}</Text>
                 </Flex>
             </Box>
-            <HStack overflow="auto" spacing='4' className="collections-slider" w={{ base: '90%', md: '80%' }} m="auto" >
+            <HStack overflow="auto" spacing='4' className="collections-slider" w={{ base: '100%', md: '100%' }} m="auto" >
                 {picsData.map((data, index) =>
                     <Box
                         backgroundImage={data.picImg}
@@ -76,7 +79,7 @@ const CollectionsItem = ({isMovers, isNewest}) => {
                         borderRadius="lg"
                         h="150px"
                         minWidth="200px"
-                        my="4"
+                        my="1"
                         key={index}
                     >
                         <Flex w="full" h="full" alignItems="flex-end" justifyContent="flex-end">
@@ -86,7 +89,7 @@ const CollectionsItem = ({isMovers, isNewest}) => {
                     </Box>
                 )}
             </HStack>
-        </HStack>
+        </Stack>
     )
 }
 

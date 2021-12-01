@@ -13,9 +13,7 @@ const HeaderDrawer = () => {
 
     return (
         <>
-            <Button ref={btnRef} gColor='#163f49' border='1px solid #00CEFF' bg='transparent' color='#00CEFF' variant='outline' d={{ base: 'block', md: 'block', lg: 'block', xl: 'none' }} onClick={onOpen}>
-                <HamburgerIcon />
-            </Button>
+            <HamburgerIcon boxSize="6" ref={btnRef} d={{ base: 'block', md: 'block', lg: 'block', xl: 'none' }} onClick={onOpen} color='#00CEFF' />
             <Drawer
                 isOpen={isOpen}
                 placement='right'
@@ -27,11 +25,11 @@ const HeaderDrawer = () => {
                     <DrawerCloseButton color="white" />
                     <DrawerBody mt="9">
                         <UnorderedList listStyleType="none" spacing="9" p="0px" m="0px" w="full">
-                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/')}}>Home</ListItem>
-                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/marketplace')}}><>Market</></ListItem>
-                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/create')}}>Create</ListItem>
-                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/buyflokin')}}>Buy Flokin</ListItem>
-                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/about')}}>About</ListItem>
+                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/') }}>Home</ListItem>
+                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/marketplace') }}><>Market</></ListItem>
+                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/create') }}>Create</ListItem>
+                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/buyflokin') }}>Buy Flokin</ListItem>
+                            <ListItem px='4' color='white' cursor='pointer' onClick={() => { onClose(); navigate('/about') }}>About</ListItem>
                         </UnorderedList>
                         <Button border fontWeight='200' size="xs" mt="7" bg='transparent' color='#00CEFF'
                             border='1px solid #00CEFF' borderRadius='full' mx='4' fontSize='12px'

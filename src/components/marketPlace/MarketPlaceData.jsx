@@ -10,39 +10,38 @@ const MarketPlaceData = ({ isCollections }) => {
 
     return (
         <VStack w={{ base: '100%', md: '100%', lg: '75%' }} alignItems="flex-start" px="5" >
-            <HStack justifyContent="space-between" w="full" pt="9" d={{ base: 'block', md: 'block', lg: 'flex' }}>
-                <HStack justifyContent="space-between" alignItems="center">
-                    <Flex mb="3" alignItems="center" >
-                        <HamburgerIcon color="white" size="lg" d={{ base: 'block', md: 'block', lg: 'none' }} onClick={() => setIsOpen(true)} />
-                        <Text ml="2" color="white">
-                            Marketplase menu
-                        </Text>
-                        {
-                            isOpen ?
-                                // <MobileSideBar setIsOpen={()=> setIsOpen(false)} isOpen={isOpen} />
-                                <MobileSideBar setIsOpen={() => setIsOpen(false)} isOpen={isOpen} />
-                                : null
-                        }
-                    </Flex>
-                    <Flex flex="1" >
-                        <Heading as="h6" textAlign="right" size="xs" color="white">{isCollections ? "6 Results" : "1,490,743 Results"}</Heading>
-                    </Flex>
-                </HStack>
-                <HStack>
-                    <Select placeholder="All Items" color="white">
-                        <option value="option1">Option 1</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
+            <Flex justifyContent="space-between" w="full" alignItems="center" mt="9" d={{ base: 'block', md: 'block', lg: 'flex' }} >
+                <Flex w={{base: '100%', md: '50%'}} mb={{ base: '4', md: '0px' }} justifyContent="space-between" alignItems="center">
+
+                    <HamburgerIcon boxSize="6" color="white" size="lg" d={{ base: 'block', md: 'block', lg: 'none' }} onClick={() => setIsOpen(true)} />
+                    {/* <Text ml="2" color="white">
+                            Market Menu
+                        </Text> */}
+                    {
+                        isOpen ?
+                            // <MobileSideBar setIsOpen={()=> setIsOpen(false)} isOpen={isOpen} />
+                            <MobileSideBar setIsOpen={() => setIsOpen(false)} isOpen={isOpen} />
+                            : null
+                    }
+
+                    <Text textAlign="right" color="white">{isCollections ? "6 Results" : "1,490,743 Results"}</Text>
+
+                </Flex>
+                <Flex w={{base: '100%', md: '50%'}} justifyContent="space-between">
+                    <Select placeholder="All Items"
+                        color='white' w="48%">
+                        <option style={{backgroundColor:"black"}} value="option1">Option 1</option>
+                        <option style={{backgroundColor:"black"}} value="option2">Option 2</option>
+                        <option style={{backgroundColor:"black"}} value="option3">Option 3</option>
                     </Select>
-                    <Select placeholder="Sort By" bg='transparent'
-                        borderColor='tomato'
+                    <Select placeholder="Sort By" bg='transparent' w="48%"
                         color='white'>
-                        <option value="option1" bgColor="red">Option 1</option>
-                        <option value="option2" bgColor="red">Option 2</option>
-                        <option value="option3" bgColor="red">Option 3</option>
+                        <option style={{backgroundColor:"black"}} value="option1">Option 1</option>
+                        <option style={{backgroundColor:"black"}} value="option2">Option 2</option>
+                        <option style={{backgroundColor:"black"}} value="option3">Option 3</option>
                     </Select>
-                </HStack>
-            </HStack>
+                </Flex>
+            </Flex>
             <Flex flexWrap="wrap" alignItems="center" justifyContent="space-between" w="full" m="auto">
                 <Products />
             </Flex>

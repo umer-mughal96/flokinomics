@@ -1,5 +1,5 @@
 import React from 'react'
-import { VStack, Flex, Heading } from '@chakra-ui/layout'
+import { VStack, Flex, Heading, Stack } from '@chakra-ui/layout'
 import { Tab, Tabs, TabList, TabPanel, TabPanels, } from '@chakra-ui/tabs'
 import CollectionsItem from './collections/CollectionsItem'
 import { Button } from '@chakra-ui/button'
@@ -18,11 +18,14 @@ const FeaturedCollections = () => {
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} fontSize={{ base: '10px', md: '15px' }} fontWeight="100" color="white">Collectibles</Tab>
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} fontSize={{ base: '10px', md: '15px' }} fontWeight="100" color="white">Utilities</Tab>
                     </TabList>
-                    <TabPanels >
+                    <TabPanels>
                         <TabPanel >
+                            <Stack spacing={{base:'12', md:'4'}}>
+
                             <CollectionsItem />
                             <CollectionsItem isMovers={true} />
                             <CollectionsItem isNewest={true} />
+                            </Stack>
                         </TabPanel>
                         <TabPanel>
                             <p>two!</p>
