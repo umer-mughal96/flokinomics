@@ -10,8 +10,8 @@ import ethereum from '../../assets/images/ethereum.png'
 
 const HeroSection = () => {
     return (
-        <VStack py={{ base: '3', md: '10', lg: '20' }} px={{ base: '3', md: '10', lg: '20' }} 
-        bgGradient="linear(to-r, #00193f, #00193f54)" alignItems="center" justifyContent="flex-end" pb="10" h={{base: '110vh', md: '130vh'}} 
+        <VStack pt="48" pb="20" px={{ base: '6', md: '10', lg: '20' }} 
+        bgGradient="linear(to-r, #00193f, #00193f54)" alignItems="center" justifyContent="flex-end" h="max-content" 
         w="full" >
             <Flex alignItems="center" w="full" h={{base: 'auto', md: 'full', lg: 'full'}} pb="14">
                 <VStack w={{ base: '10%', md: '15%', lg: '15%' }} h="xs" px="4" d={{ base: 'none', md: 'none', lg: 'block' }}>
@@ -54,7 +54,7 @@ const HeroSection = () => {
                 </VStack>
             </Flex>
             <Flex d={{ base: 'block', md: 'block', lg: 'flex' }}  w={{base: 'full', md: '50%', lg: '45%'}} alignItems="center" justifyContent="space-between">
-                <Text color="white" textAlign="center"  w="full">Supported Blockchains</Text>
+                <Text color="white" textAlign="center" mb={{base: '5', md: '0px'}} w="full">Supported Blockchains</Text>
                 <HStack color="white" spacing="9" w="full" alignItems="center" justifyContent="center">
                     <Image src={ethereum} w={10} h={10} />
                     <Image src={ethereum} w={10} h={10} />

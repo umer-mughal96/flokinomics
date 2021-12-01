@@ -11,10 +11,10 @@ const FeaturedCollections = () => {
             <Heading color="white" fontSize={{base: 'lg', md: '2xl', lg: '3xl'}}>Featured Collections</Heading>
             <Flex w={{ base: '95%', md: '90%', lg: '95%' }}>
                 <Tabs variant="soft-rounded" w="full" color="white" >
-                    <TabList className="collections-slider" overflow="auto" my="2" bg='#1d1d1d' borderRadius="full" w={{ base: '100%', md: '100%', lg: '60%' }} mx="auto" alignItems="center" justifyContent="space-between">
+                    <TabList p="2" className="collections-slider" overflow="auto" my="2" bg='#1d1d1d' borderRadius="full" w={{ base: '100%', md: '100%', lg: '60%' }} mx="auto" alignItems="center" justifyContent="space-between">
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} fontSize={{ base: '10px', md: '15px' }} fontWeight="100" color="white">Artwork</Tab>
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} fontSize={{ base: '10px', md: '15px' }} fontWeight="100" color="white">Music</Tab>
-                        <Tab _selected={{ color: "white", bg: "#FFD700" }} fontSize={{ base: '10px', md: '15px' }} fontWeight="100" color="white">Tranding Cards</Tab>
+                        <Tab _selected={{ color: "white", bg: "#FFD700" }} fontSize={{ base: '10px', md: '15px' }} fontWeight="100" color="white" minW="max-content">Tranding Cards</Tab>
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} fontSize={{ base: '10px', md: '15px' }} fontWeight="100" color="white">Collectibles</Tab>
                         <Tab _selected={{ color: "white", bg: "#FFD700" }} fontSize={{ base: '10px', md: '15px' }} fontWeight="100" color="white">Utilities</Tab>
                     </TabList>
